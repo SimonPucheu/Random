@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html id="html" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Lines</title>
+</head>
+
+<body>
+    <nav id="side">
+        <h1>Lines spread</h1>
+        <p>
+            The lines have a choice to do each iteration: go on left or right.
+            This is done by a random number provide by <code>Math.random</code> javascript function.
+        </p>
+        <div id="inputs">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Line number</td>
+                        <td>
+                            <input type="number" id="lineNumber" min="1" value="10" max="10000" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Line color</td>
+                        <td>
+                            <input type="color" id="lineColor" value="#0000ff">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Line transparency</td>
+                        <td>
+                            <input type="number" id="lineTransparency" min="0.1" value="0.1" max="1" step="0.1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Line width</td>
+                        <td>
+                            <input type="number" id="lineWidth" min="1" value="3" max="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Background color</td>
+                        <td>
+                            <input type="color" id="backgroundColor" value="#ffffff">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="button" id="run" value="Run" />
+        </div>
+    </nav>
+    <main>
+        <canvas id="canvas">Your browser does"nt support HTML 5</canvas>
+    </main>
+    <script type="text/javascript" async defer src="script.js"></script>
+</body>
+
+</html>
