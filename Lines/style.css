@@ -1,5 +1,5 @@
 html {
-    font-family: "Consolas";
+    font-family: monospace;
 }
 
 body {
@@ -27,6 +27,7 @@ input {
     background-color: white;
     color: black;
     height: 30px;
+    padding: 0;
     outline: none;
 }
 
